@@ -28,13 +28,13 @@ Edit this document to include your answers after each question. Make sure to lea
 
 
 `.map` - creates a new array with converted data from a provided function without manipulating the original array. A return statement must be used.
-Use: It used to an invoke a function on every element in an array (e.g. converting all capital lettters in an array to lowercased letters).
+Use: It used to invoke a function on every element in an array (e.g. the .toLowerCase() function can be used with .map to convert all capital lettters in an array to lowercased letters).
 
 `.filter` - creates a new array with all elements that pass a test implemented by a provided function without manipulating the original array. A return statement must be used. 
 Use: It is used to filter out certain wanted results into a new array that can pass a true or false test (e.g. if a test passes as true, its included in the new array, if it fails as false it's not included in the new array). )
 
 `.reduce` - does NOT create a new array and only returns a single value after it's run across all elements. It does not manipulate the original array and it could be used for anything. 
-Use: It is usually used for adding and subtracting inside an array.
+Use: It is usually used for addition and multiplication.
 
 
 2. Explain the difference between a callback and a higher order function.
@@ -42,27 +42,31 @@ Use: It is usually used for adding and subtracting inside an array.
 
 Higher Order Functions can receive other functions as parameters. 
 Callback Functions can be passed into other functions as arguements.
+(i.e. A Callback Function can be passed into a High Order Function.)
 
 
 3. Explain what a closure is.
 
 
-Closure is when an inner function has to reach outside of its scope to grab a variable defined in the outer scope (becuase the variable is not defined in the inner function's scope).
+Closure is when an inner function has to reach outside of its scope to grab a variable defined in the outer scope becuase the variable is not defined in the inner function's scope.
 
 
 4. Describe the four principles of the 'this' keyword.
 
 
- (1) Window Binding - when "this" is in the global scope, the value of "this" will be the window or console object.
- (2) Implicit Binding - the value of "this" is the object to the left of a dot when using dot notation to call a function (aka method in an object)(only applies to objects with methods).
- (3) New Binding - the value of "this" is the object that is created and returned by the constructor function (during a specifc invocation) when using constructor functions.
+ (1) Window Binding - when "this" is in the global scope, the value of "this" will be the window or console object (global object in node or undefined in strict mode).
+
+ (2) Implicit Binding - the value of "this" is the object to the left of a dot when using dot notation to invoke a function (method). This only applies to objects with methods.
+
+ (3) New Binding - the value of "this" is the object that is created and returned by the constructor function during a specifc instance, when using constructor functions.
+ 
  (4) Explicit Binding - the value of "this" is the new/other object that is explicitly defined when using the .call, .apply or .bind method.
   
 
 5. Why do we need super() in an extended class?
 
 
-We need super() in an extended class becuase it tells a parent's constructor to be concerned with the child's attributes in a given code.
+We need super() in an extended class becuase it tells a parent's constructor to be concerned with the child's attributes.
 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
