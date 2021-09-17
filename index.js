@@ -17,6 +17,10 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
+//The nested function can access the variable "internal" because "internal" is referenced in the outer scope of nestedFunction. 
+// Since the variable "internal" isn't defined in the nestedFunction's scope, nestedFunction will look outside the scope chain 
+// and search for the variable "internal" being referenced in the outer scope.
+
 
 
 
